@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Input";
+}
+
+<h2>Input</h2>
+
+<p>Type in the longitude and latitude for the weather</p>
+<form action="UserInput" method="get" onsubmit="return validateForm()">
+
+    <p>Latitude</p>
+    <p></p>
+    <input type="number" step=".000001" name="latView" value="45.222222" />
+    <p></p>
+    <p>Longitude</p>
+    <input type="number" name="lonView" step=" .000001" value="-62.445455" />
+    <p></p>
+    <input type="submit" value="Check Weather" />
+
+</form>
